@@ -15,7 +15,7 @@ button,input,textarea,select{font:inherit}button{cursor:pointer;border:1px solid
 <body>
 <div class="app">
 <header class="topbar">
- <div class="brand"><div class="logo">ReL<br>TV</div><div><h1>Storyboard Studio <span style="color:var(--gold)">V5</span></h1><p>Film planning • Master sheets • Prompt generator</p></div></div>
+ <div class="brand"><div class="logo">ReL<br>TV</div><div><h1>Storyboard Studio <span style="color:var(--gold)">V5.1</span></h1><p>Film planning • Master sheets • Prompt generator</p></div></div>
  <div class="top-actions"><button class="subtle" id="backupBtn">Backup JSON</button><button class="primary" id="newProjectTop">＋ Projek Baru</button></div>
 </header>
 <section class="hero">
@@ -52,13 +52,13 @@ button,input,textarea,select{font:inherit}button{cursor:pointer;border:1px solid
  </div></div>
 </section>
 <section id="page-characters" class="page hidden">
- <div class="panel"><div class="panel-head"><div><h3>Master Sheet Watak</h3><p>Tambah watak dan simpan foto rujukan wajah untuk rujukan prompt.</p></div><button class="primary" id="newCharacter">＋ Tambah Watak</button></div><div id="characterList" class="cards"></div></div>
+ <div class="panel"><div class="panel-head"><div><h3>Master Sheet Watak</h3><p>V5.1: Tambah watak, muat naik foto dari galeri, dan gunakan foto rujukan dalam prompt setiap scene.</p></div><button class="primary" id="newCharacter">＋ Tambah Watak</button></div><div id="characterList" class="cards"></div></div>
  <div class="panel hidden" id="characterFormPanel"><div class="panel-head"><div><h3 id="characterFormTitle">Watak Baharu</h3><p>Isi butiran dan muat naik foto rujukan pilihan.</p></div><button id="closeCharacterForm">Tutup</button></div><input type="hidden" id="cId"><div class="field-grid">
  <div class="field"><label>Nama watak *</label><input id="cName" placeholder="Nama watak"></div><div class="field"><label>Umur</label><input id="cAge" placeholder="Contoh: 28 tahun"></div>
  <div class="field"><label>Peranan</label><input id="cRole" placeholder="Watak utama, antagonis..."></div><div class="field"><label>Jantina / penampilan</label><input id="cGender" placeholder="Lelaki Melayu..."></div>
  <div class="field full"><label>Ciri wajah & fizikal</label><textarea id="cLook" placeholder="Bentuk wajah, rambut, mata, tinggi..."></textarea></div>
  <div class="field full"><label>Pakaian tetap / wardrobe lock</label><textarea id="cWardrobe" placeholder="Pakaian yang mesti konsisten..."></textarea></div>
- <div class="field full"><label>Foto rujukan watak</label><input id="cPhoto" type="file" accept="image/*"><div class="muted">Foto disimpan pada browser ini. Gunakan imej yang tidak terlalu besar untuk mengelakkan storan penuh.</div><img id="cPhotoPreview" class="character-photo hidden" alt="Pratonton foto watak"></div>
+ <div class="field full"><label>📷 Foto rujukan watak (V5.1 — muat naik dari galeri)</label><input id="cPhoto" type="file" accept="image/*"><div class="muted">Foto disimpan pada browser ini. Gunakan imej yang tidak terlalu besar untuk mengelakkan storan penuh.</div><img id="cPhotoPreview" class="character-photo hidden" alt="Pratonton foto watak"></div>
  <div class="field full"><label>Nota kesinambungan</label><textarea id="cNotes" placeholder="Contoh: jangan ubah wajah, rambut atau aksesori..."></textarea></div>
  <div class="field full"><button class="primary" id="saveCharacter">Simpan Watak</button></div>
  </div></div>
